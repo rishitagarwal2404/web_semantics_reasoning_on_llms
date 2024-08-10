@@ -1,0 +1,22 @@
+S.NO.,RDF Form Question ,RDF Form Answere,Question ,Answere ,Property
+1,"Statement 1:rdfs: subClassOf India Asia
+Statement 2:rdfs: subClassOf Asia Eath
+inference : rdfs: subClass Of India Earth ",True ,Statement 1 is if India belongs to the sub class of Asia. Statement 2 is if Asia belong to the sub class of earth. Based on this the inference is that  India would also belong to the sub class of earth. ,True ,Transitive Property
+2,"Statement 1:rdf:type SUV500 Car
+Statement 2:rdfs:subClassOf Car Automobile
+inference : rdf:type SUV500 Automobile ",True ,"Statement1 is if suv500 is a name that belongs to the set of cars. Statement2 is if cars is a sub category of Automobiles. Based on this the Inference is that SUV500 would also be an Automobile.
+",True ,Type Inference  Property
+3,"rdf:type Harshit EmployeesGoogle
+rdf:type Vikas EmployeesGoogle 
+isManagerOf  is a property of class EmployeesGoogle 
+rdf:domain :EmployeesGoogle 
+rdf:range :EmployeesGoogle
+Statement1 :rdf:isManagerOf Harshit Vikas 
+Inference : rdf:isManagerOf Vikas Harshit",False ,Statement1 is if Harshit and Vikas are names that belongs to the class of Employees of Google . Statement2 is if Harshit is the manager of Vikas. Based on this the inference is that Vikas will also be the manager of Harshit. ,False ,Inverse  Property
+4,"rdf:type Δ BCE Traingles
+rdf:type Δ FGH Traingles
+isCongruentTo is a property of Traingles 
+rdf:domain :Traingles
+rdf:range :Traingles
+Statement1 :rdf:isCongruentTo ΔBCE ΔFGH 
+Inference : rdf:isCongruentTo ΔBCE ΔFGH",True ,Statement1 is if ΔBCE and ΔFGH are names of triangles that belongs to the set of triangles. Statement2 is if ΔBCE is congruent to ΔFGH.Based on this the inference is that ΔFGH is congruent to ΔBCE.,True ,Symmetry  Property

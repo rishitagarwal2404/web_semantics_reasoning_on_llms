@@ -1,0 +1,130 @@
+S.NO.,RDF Form Question ,RDF Form Answere,Question ,Answere ,Property
+1,"Statement 1: rdfs: subClassOf Graphite Conductor
+Statement 2 rdfs:subClassOf Conductor Metal
+Inference : rdfs:subClassOf Graphite Metal ",0,"Statement 1: If Graphite belongs to the category.
+Statement 2: If Conductors belongs to the category of Metal. 
+Inference : Then Graphite would also belong to the category of metal",0,Transitive Property
+2,"Statement 1:rdfs: subClassOf red orange
+Statement 2:rdfs: subClassOf orange colors
+inference : rdfs: subClass Of red colors ",1,"Statement 1: If red belongs to the class of orange which consists of red and yellow.
+Statement 2: If orange belongs to the set of colors.
+Inference : Then red would belong to the set of colors.",1,Transitive Property
+3,"Statement 1:rdfs: subClassOf Ganga River
+Statement 2:rdfs: subClassOf River Water Body
+inference : rdfs: subClass Of Ganga Water Body ",1,"Statement 1: If Ganga belongs to the category of Rivers. 
+Statement 2: If River belongs to the category of Water Body. 
+Inference : Then Ganga would also belong to the category of Water Body.",1,Transitive Property
+4,"Statement 1:rdfs: subClassOf Oxygen Water
+Statement 2:rdfs: subClassOf Water Fire Extinguisher
+inference : rdfs: subClass Of Oxygen Fire Extinguisher ",0,"Statement 1: If Oxygen belongs to the category of water. 
+Statement 2: If water belong to the category of agents used to extinguish fire. 
+Inference : Then Oxygen would also belong to the category of agents that extinguish fire.",0,Transitive Property
+5,"Statement 1:rdf:type henry King
+Statement 2:rdfs:subClassOf King Monarch
+inference : rdf:type henry Monarch ",1,"Statement1 : If henry is a name that belongs to the set of Kings.
+Statement2 : If Kings is a sub category of Monarchs.
+Inference : Then Henry would also be a monarch.
+",1,Type Inference  Property
+6,"Statement1 : rdf:type  A94A8FE5CCB19BA61C4C0873D391E987982FBBD3 Blob
+Statement2 : rdf:subClassOf Blob Tree
+Inference : rdf : type  A94A8FE5CCB19BA61C4C0873D391E987982FBBD3 Tree",0,"Statement1 : If “A94A8FE5CCB19BA61C4C0873D391E987982FBBD3” is a name or a hash value that belongs to the set of Blobs.
+Statement2 : If Blobs is a sub category of Trees.
+Inference : A94A8FE5CCB19BA61C4C0873D391E987982FBBD3 is also a tree.
+",0,Type Inference  Property
+7,"Statement 1:rdf:type Shiv Minister
+Statement 2:rdfs:subClassOf Minister Government
+inference : rdf:type Shiv Government ",1,"Statement1 : If Shiv is a name that belongs to the set of Ministers.
+Statement2 : If the activity of cooking is done for the dinners.
+Inference : Then Shiv would also be a part of Government.
+",1,Type Inference  Property
+8,"Statement1 : rdfs:domain CooksFor Chef
+Statement2 : rdfs:range CooksFor Dinners
+Statement3: CooksFor Rohit Shivam
+Inference : 
+rdf:type Rohit Chef
+rdf:type Shivam Dinners",1,"Statement1 :  If there is an an activity of cooking and it is done by a Chef.
+Statement2 : If the activity of cooking is done for the dinners.
+Statement3: Rohit cooks for shivam. 
+Inference : 
+Rohit is a cook.
+Shivam is a dinner.",1,Type Inference  Property
+9,"rdf:type Harsh Relatives
+rdf:type Varsha Relatives 
+isWardOf  is a property of class Relatives 
+rdf:domain :Relatives 
+rdf:range :Relatives 
+Statement1 :rdf:isWardOf Harsh Varsha 
+Inference : rdf:isWardOf Varsha Harsh",0,"Statement1 :If Harsh is a name that belongs to the class of Relatives . 
+Statement2 :If Varsha is a name that belongs to the class of Relatives.
+Statement3 :If Harsh is the ward of Varsh. 
+Inference : Then can we say that Varsh will also be the ward of Harsh. ",0,Inverse  Property
+10,"rdf:type Natural Numbers
+rdf:type Whole Numbers 
+isSetOf  is a property of class Numbers
+rdf:domain :Numbers
+rdf:range :Numbers
+Statement1 :rdf:isSetOf Natural Whole 
+Inference : rdf:isSetOf Whole Natural ",0,"Statement1 :If Natural Numbers belongs to the class of Numbers . 
+Statement2 :If Whole Numbers belongs to the class of Numbers.
+Statement3 :If all Natural Numbers belongs to the set of  Whole Numbers. 
+Inference : Then can we say that all Whole Numbers will also belong to the set of Natural Numbers. ",0,Inverse  Property
+11,"rdf:type Dhiman School
+rdf:type Ram School 
+isTeacherOf  is a property of class School
+rdf:domain :School
+rdf:range :School
+Statement1 :rdf:isTeacherOf Dhiman Ram 
+Inference : rdf:isTeacherOf Ram Dhiman ",0,"Statement1 :If Rahul belongs to the set of people in School . 
+Statement2 :If Dhiman belongs to the set of People in School.
+Statement3 :If Dhiman is the teacher of Ram. 
+Inference : Then can we say that Ram will also be the teacher of Dhiman. ",0,Inverse  Property
+12,"rdf:type Mohak Relatives
+rdf:type Rani Relatives 
+isBrotherOf is a property of class Relatives 
+rdf:domain :Relatives 
+rdf:range :Relatives 
+Statement1 :rdf:isBrotherOf Mohak Rani 
+Inference : rdf:isBrotherOf Rani Mohak",0,"Statement1 :If Mohak is a name that belongs to the class of Relatives . 
+Statement2 :If Rani is a name that belongs to the class of Relatives.
+Statement3 :If Mohak is the brother of Rani. 
+Inference : Then can we say that Rani will also be the brother of Mohak. ",0,Inverse  Property
+13,"rdf:type 1 numbers
+rdf:type √1 numbers
+isSquareRootOf  is a property of class Numbers
+rdf:domain :Numbers
+rdf:range :Numbers
+Statement1 :rdf:isSquareRootOf 1 √1 
+Inference : rdf:isSquareRootOf √1 1",1,"Statement1 :If 1 belongs to the class of Numbers . 
+Statement2 :If √1belongs to the class of Numbers.
+Statement3 :If 1 is the square root of √1. 
+Inference : Then can we say that the square root of √1 will also be equal to 1.",1,Symmetry  Property
+14,"rdf:type Mohit Friend
+rdf:type Rishit Friend
+isFriendOf  is a property of class Friend 
+rdf:domain :Friend 
+rdf:range :Friend 
+Statement1 :rdf:isFriendOf Mohit Rishit 
+Inference : rdf:isFriendOf Rishit Mohit",1,"Statement1 :If Mohit is a name that belongs to the class of Friends . 
+Statement2 :If Rishit is a name that belongs to the class of Friends.
+Statement3 :If Mohit is the friend of Rishit. 
+Inference : Then can we say that Rishit will also be the friend of Mohit. ",1,Symmetry  Property
+15,"rdf:type Siya Relatives
+rdf:type Shan Relatives 
+isSibblingOf is a property of class Relatives 
+rdf:domain :Relatives 
+rdf:range :Relatives 
+Statement1 :rdf:isSibblingOf Siya Shan 
+Inference : rdf:isSibblingOf Shan Siya",1,"Statement1 :If Siya is a name that belongs to the class of Relatives . 
+Statement2 :If Shan is a name that belongs to the class of Relatives.
+Statement3 :If Siya is the sibbling of Shan. 
+Inference : Then can we say that Shan will also be the sibbling of Siya. ",1,Symmetry  Property
+16,"rdf:type Δ ABC EquilateralTraingles
+rdf:type Δ DEF EquilateralTraingles
+isSimilarTo is a property of EquilateralTraingles 
+rdf:domain :EquilateralTraingles
+rdf:range :EquilateralTraingles
+Statement1 :rdf:isSimilarTo ΔABC ΔDE 
+Inference : rdf:isSimilarTo ΔDEF ΔABC",1,"Statement1 :If ΔABC is a name of a Triangle that belongs to the set of Equilateral Triangles. 
+Statement2 :If ΔDEF is a name  of  Triangle that belongs to the set of Equilateral Triangles.
+Statement3 :If ΔABC is Similar To ΔDEC.
+Inference : Then can we say that ΔDEC is Similar To ΔABC.",1,Symmetry  Property
